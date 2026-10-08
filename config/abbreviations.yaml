@@ -1,0 +1,58 @@
+# Common job title abbreviations
+# Format: abbreviation: full expansion
+
+medical_healthcare:
+  RN: Registered Nurse
+  LPN: Licensed Practical Nurse
+  CNA: Certified Nursing Assistant
+  PA: Physician Assistant
+  NP: Nurse Practitioner
+  MD: Medical Doctor
+  DO: Doctor of Osteopathic Medicine
+  MA: Medical Assistant
+  PT: Physical Therapist
+  OT: Occupational Therapist
+  EMT: Emergency Medical Technician
+
+business_executive:
+  CEO: Chief Executive Officer
+  CFO: Chief Financial Officer
+  CTO: Chief Technology Officer
+  COO: Chief Operating Officer
+  VP: Vice President
+  SVP: Senior Vice President
+  EVP: Executive Vice President
+  GM: General Manager
+
+finance_accounting:
+  CPA: Certified Public Accountant
+  CFA: Chartered Financial Analyst
+
+technology:
+  IT: Information Technology
+  SWE: Software Engineer
+  PM: Project Manager
+  QA: Quality Assurance
+  DevOps: Development and Operations
+  SRE: Site Reliability Engineer
+  BA: Business Analyst
+  UX: User Experience
+  UI: User Interface
+
+human_resources:
+  HR: Human Resources
+  HRIS: Human Resources Information System
+  TA: Talent Acquisition
+
+industry:
+  MFG: Manufacturing
+  Mfg: Manufacturing
+  R&D: Research and Development
+  Mgmt: Management
+  Govt: Government
+  Hosp: Hospitality
+
+other:
+  # NA is not listed: expanding it to "Not Applicable" put words in answers
+  # that the respondent did not write.
+  TBD: To Be Determined

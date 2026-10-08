@@ -1,0 +1,86 @@
+# Participant data lives in the data root, outside this repository. These
+# rules are a second line of defence: data files are ignored by default.
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.xlsm
+*.parquet
+*.feather
+*.arrow
+*.sav
+*.zsav
+*.por
+*.sas7bdat
+*.xpt
+*.dta
+*.rds
+*.rdata
+*.RData
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.jsonl
+*.db
+*.sqlite
+*.sqlite3
+*.docx
+*.doc
+*.pdf
+/resource/
+/outputs/
+/cache/
+/data/
+/logs/
+
+# Local pipeline configuration: data root location, inputs and layout.
+# The template, config/pipeline.example.yaml, is tracked.
+/config/pipeline.yaml
+
+# Secrets
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+credentials.json
+secrets.yaml
+secrets.yml
+.netrc
+
+# editor tooling
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.venv-*/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Model weights
+models/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+
+*.log
+*.tmp
+*.bak
+.worktrees/

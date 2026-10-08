@@ -1,0 +1,33 @@
+# Copy to pipeline.yaml in this directory (not tracked) and fill in.
+# Paths other than data_root are relative to data_root.
+
+# Directory holding the inputs and receiving the outputs; absolute, or
+# relative to the repository root. ONET_DATA_ROOT overrides it.
+data_root: /path/to/data-root
+
+survey:
+  name: survey                  # prefix for this survey's output files
+  file: path/to/survey.sav      # SPSS file of the survey release
+  columns:                      # survey variables
+    id: participant_id_variable
+    job_title: job_title_variable
+    industry: industry_variable
+    duties: duties_variable
+
+# O*NET 30.1 in Excel format, from https://www.onetcenter.org/database.html
+onet:
+  alternate_titles: path/to/Alternate Titles.xlsx
+  reported_titles: path/to/Sample of Reported Titles.xlsx
+
+paths:
+  intermediate: path/for/cleaned/inputs
+  outputs: path/for/results/and/worksheets
+  cache: path/for/model/and/embeddings
+  logs: path/for/logs
+
+# The worksheet reviewers coded, frozen by scripts/freeze_review_frame.py.
+# While it is set, stage 04 keeps its rows, batches, statuses, scores and
+# candidates, and refreshes only the answer text. Leave it out to build the
+# worksheets from the current run.
+# review:
+#   frame: path/to/frozen/worksheet.csv
